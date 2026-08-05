@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Badami NextGen Solutions (BNGS) — cross-border payments, consulting, and technology infrastructure for banks, fintechs, and governments." />
   <title>BNGS — Badami NextGen Solutions</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="images/bngs-logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
@@ -16,9 +16,8 @@
 
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Primary">
-      <a class="nav__brand" href="#top">
-        <span class="nav__mark">BNGS</span>
-        <span class="nav__name">Badami NextGen Solutions</span>
+      <a class="nav__brand" href="#top" aria-label="BNGS home">
+        <img class="nav__logo" src="images/bngs-logo.png" alt="BNGS" width="110" height="44" />
       </a>
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
         <span class="nav__toggle-bar"></span>
@@ -42,14 +41,15 @@
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="hero__grid">
         <div class="hero__copy">
-          <p class="hero__tag">Cross-Border Payments · Consulting · Technology</p>
-          <p class="hero__brand" id="hero-brand">BNGS</p>
-          <p class="hero__subbrand">Badami NextGen Solutions</p>
-          <h1 class="hero__headline">Building the infrastructure behind the world's connected payments.</h1>
-          <p class="hero__lead">
-            Money should move as effortlessly as information. We connect countries, institutions, and technologies through real-time payment rails, UPI integrations, and purpose-built applications.
+          <p class="hero__tag hero-anim" style="--d: 0s">Cross-Border Payments · Consulting · Technology</p>
+          <h1 class="hero__headline hero-anim" id="hero-brand" style="--d: 0.1s">Building the infrastructure behind the world's connected payments.</h1>
+          <p class="hero__lead hero-anim" style="--d: 0.22s">
+            Money should move as effortlessly as information. BNGS develops the payment infrastructure that makes this possible: connecting countries, institutions, and technologies through real-time payment rails, UPI integrations, regulatory compliance, certification, and purpose-built applications.
           </p>
-          <div class="hero__actions">
+          <p class="hero__lead hero__lead--secondary hero-anim" style="--d: 0.32s">
+            We partner with banks, fintechs, and governments to create payment ecosystems that are trusted, scalable, and ready for the future.
+          </p>
+          <div class="hero__actions hero-anim" style="--d: 0.42s">
             <a class="btn btn--gold" href="#contact">Start a Conversation</a>
             <a class="btn btn--ghost" href="#services">Explore Our Services</a>
           </div>
@@ -60,27 +60,24 @@
     <section class="section about section-has-bg reveal" id="about" aria-labelledby="about-heading">
       <div class="section-bg section-bg--about" aria-hidden="true"></div>
       <div class="section__inner">
-        <p class="eyebrow"><span class="section__num">01</span> Who We Are</p>
+        <p class="eyebrow reveal-item"><span class="section__num">01</span> Who We Are</p>
         <div class="about__layout">
-          <div class="about__media">
+          <div class="about__media reveal-item">
             <h2 id="about-heading">Your partner in navigating the complexity of cross-border payments.</h2>
             <figure class="about__figure">
               <img src="who_we_are.png" alt="Professional collaborating on payment strategy across devices" width="640" height="400" loading="lazy" />
             </figure>
           </div>
-          <div class="about__content">
-            <p class="section__aside">
-              We design, integrate, certify, and operationalize the systems that keep money moving — from strategy through go-live and long-term support.
-            </p>
+          <div class="about__content reveal-item">
             <div class="about__copy">
               <p>
                 Badami NextGen Solutions (BNGS) helps banks, governments, fintechs, and financial institutions build, connect, and scale modern payment ecosystems. We specialize in the most complex part of payments where domestic systems meet international networks, regulations intersect, and interoperability becomes mission-critical.
               </p>
               <p>
-                With deep expertise across real-time payment systems, cross-border corridors, scheme integration, compliance, certification, and payment technology, our team brings hands-on experience gained from delivering payment infrastructure across multiple markets.
+                With deep expertise across real-time payment systems, cross-border corridors, scheme integration, compliance, certification, and payment technology, our team brings hands-on experience gained from delivering payment infrastructure across multiple markets. We don't just provide strategic advice; we design, integrate, certify, and operationalize the systems that keep money moving.
               </p>
               <p>
-                From enabling a bank to connect with a new payment corridor, supporting a fintech through certification, or partnering with governments on national payment initiatives, BNGS serves as a single, accountable partner.
+                From enabling a bank to connect with a new payment corridor, supporting a fintech through certification, or partnering with governments on national payment initiatives, BNGS serves as a single, accountable partner from strategy and implementation to go-live and long-term support.
               </p>
             </div>
           </div>
@@ -91,15 +88,17 @@
     <section class="section services section-has-bg reveal" id="services" aria-labelledby="services-heading">
       <div class="section-bg section-bg--services" aria-hidden="true"></div>
       <div class="section__inner">
-        <div class="section__header">
-          <p class="eyebrow"><span class="section__num">02</span> What We Do</p>
-          <h2 id="services-heading">Three areas of expertise. One goal: payments that perform.</h2>
-          <p class="section__lead">
-            Every engagement is built around a measurable outcome, not billable hours. We combine strategy, technology, and execution to help payment ecosystems move forward with confidence.
+        <div class="section__header section__header--split reveal-item">
+          <div>
+            <p class="eyebrow"><span class="section__num">02</span> What We Do</p>
+            <h2 id="services-heading">Three areas of expertise. One goal: payments that perform.</h2>
+          </div>
+          <p class="section__aside">
+            Every engagement is built around a measurable outcome, not billable hours. Whether it's launching a cross-border payment corridor, achieving certification, or delivering a production-ready platform, we combine strategy, technology, and execution to help payment ecosystems move forward with confidence.
           </p>
         </div>
 
-        <div class="services__shell glass">
+        <div class="services__shell glass reveal-item">
           <div class="services__tabs" role="tablist" aria-label="Service areas">
             <button class="services__tab is-active" type="button" role="tab" id="tab-0" aria-selected="true" aria-controls="panel-0" data-index="0">
               <span class="services__tab-num">01</span>
@@ -174,11 +173,11 @@
     <section class="section approach section-has-bg reveal" id="approach" aria-labelledby="approach-heading">
       <div class="section-bg section-bg--approach" aria-hidden="true"></div>
       <div class="section__inner approach__layout">
-        <div class="approach__intro">
+        <div class="approach__intro reveal-item">
           <p class="eyebrow"><span class="section__num">03</span> How We Deliver</p>
           <h2 id="approach-heading">End-to-end isn't a promise. It's how we work.</h2>
           <p class="section__lead">
-            Building a payment ecosystem requires seamless execution across integration, certification, compliance, and ongoing operations — with every stage aligned and production-ready.
+            Building a payment ecosystem requires more than technology — it demands seamless execution across integration, certification, compliance, and ongoing operations. BNGS provides end-to-end delivery, ensuring every stage is aligned, every dependency is managed, and every solution is ready for production.
           </p>
           <figure class="approach__figure">
             <img src="how_we_deliver.png" alt="Team delivering payment systems and infrastructure" width="800" height="320" loading="lazy" />
@@ -186,23 +185,23 @@
         </div>
 
         <ol class="timeline">
-          <li class="timeline__item">
+          <li class="timeline__item reveal-item">
             <span class="timeline__dot" aria-hidden="true"></span>
             <div class="timeline__content">
               <span class="timeline__label">Integrate</span>
               <h3>Payment Integrations</h3>
-              <p>We connect banks, payment schemes, switches, fintech platforms, and third-party providers through secure, standards-compliant integrations.</p>
+              <p>We connect banks, payment schemes, switches, fintech platforms, and third-party providers through secure, reliable, and standards-compliant integrations.</p>
             </div>
           </li>
-          <li class="timeline__item">
+          <li class="timeline__item reveal-item">
             <span class="timeline__dot" aria-hidden="true"></span>
             <div class="timeline__content">
               <span class="timeline__label">Certify</span>
               <h3>Testing &amp; Certification</h3>
-              <p>From structured testing to scheme certification, we help you meet technical and operational requirements with confidence before go-live.</p>
+              <p>From structured testing to scheme certification, we help you meet technical and operational requirements with confidence, reducing risk before go-live.</p>
             </div>
           </li>
-          <li class="timeline__item">
+          <li class="timeline__item reveal-item">
             <span class="timeline__dot" aria-hidden="true"></span>
             <div class="timeline__content">
               <span class="timeline__label">Resolve</span>
@@ -210,7 +209,7 @@
               <p>We design dispute and chargeback workflows that are efficient, compliant, and built into your payment operations from day one.</p>
             </div>
           </li>
-          <li class="timeline__item">
+          <li class="timeline__item reveal-item">
             <span class="timeline__dot" aria-hidden="true"></span>
             <div class="timeline__content">
               <span class="timeline__label">Comply</span>
@@ -218,51 +217,45 @@
               <p>Navigate evolving regulatory requirements with expert guidance across payment schemes, industry standards, and central bank frameworks.</p>
             </div>
           </li>
-          <li class="timeline__item">
+          <li class="timeline__item reveal-item">
             <span class="timeline__dot" aria-hidden="true"></span>
             <div class="timeline__content">
               <span class="timeline__label">Operate</span>
               <h3>Managed Services</h3>
-              <p>Ongoing monitoring, maintenance, optimization, and operational support to keep your payment ecosystem secure, resilient, and performing at scale.</p>
+              <p>We provide ongoing monitoring, maintenance, optimization, and operational support to keep your payment ecosystem secure, resilient, and performing at scale.</p>
             </div>
           </li>
         </ol>
       </div>
     </section>
 
-    <section class="section why section-has-bg reveal" id="why" aria-labelledby="why-heading">
-      <div class="section-bg section-bg--why" aria-hidden="true"></div>
+    <section class="section why reveal" id="why" aria-labelledby="why-heading">
       <div class="section__inner">
-        <div class="why__layout">
-          <div class="why__intro">
-            <p class="eyebrow"><span class="section__num">04</span> Why BNGS</p>
-            <h2 id="why-heading">Trusted for expertise. Chosen for outcomes.</h2>
-            <figure class="why__figure">
-              <img src="why_bngs.png" alt="Trusted security and protection for payment ecosystems" width="640" height="400" loading="lazy" />
-            </figure>
-          </div>
-          <div class="why__grid">
-            <article class="why__card glass">
-              <span class="why__num" aria-hidden="true">01</span>
-              <h3>Proven Cross-Border Expertise</h3>
-              <p>Real payment infrastructure — from corridor launches and scheme integrations to certification and production deployment.</p>
-            </article>
-            <article class="why__card glass">
-              <span class="why__num" aria-hidden="true">02</span>
-              <h3>A Strong Global Payments Network</h3>
-              <p>Relationships across banks, schemes, regulators, and institutions that accelerate collaboration and reduce time to market.</p>
-            </article>
-            <article class="why__card glass">
-              <span class="why__num" aria-hidden="true">03</span>
-              <h3>One Partner. End to End.</h3>
-              <p>A single team with end-to-end accountability from strategy and design through go-live and ongoing operations.</p>
-            </article>
-            <article class="why__card glass">
-              <span class="why__num" aria-hidden="true">04</span>
-              <h3>Enterprise Expertise. Right-Sized Delivery.</h3>
-              <p>Senior payment specialists without large-firm overhead — tailored to your goals, timeline, and budget.</p>
-            </article>
-          </div>
+        <div class="section__header reveal-item">
+          <p class="eyebrow"><span class="section__num">04</span> Why BNGS</p>
+          <h2 id="why-heading">Trusted for expertise. Chosen for outcomes.</h2>
+        </div>
+        <div class="why__grid">
+          <article class="why__card glass reveal-item">
+            <span class="why__num" aria-hidden="true">01</span>
+            <h3>Proven Cross-Border Expertise</h3>
+            <p>Our experience is built on delivering real payment infrastructure, from cross-border corridor launches and scheme integrations to certification and production deployment. We understand the challenges because we've solved them.</p>
+          </article>
+          <article class="why__card glass reveal-item">
+            <span class="why__num" aria-hidden="true">02</span>
+            <h3>A Strong Global Payments Network</h3>
+            <p>Our relationships across banks, payment schemes, regulators, and financial institutions help accelerate collaboration, streamline integrations, and reduce the time it takes to bring payment initiatives to market.</p>
+          </article>
+          <article class="why__card glass reveal-item">
+            <span class="why__num" aria-hidden="true">03</span>
+            <h3>One Partner. End to End.</h3>
+            <p>From strategy and solution design to implementation, certification, go-live, and ongoing operations, we provide a single team with end-to-end accountability, eliminating unnecessary complexity and vendor coordination.</p>
+          </article>
+          <article class="why__card glass reveal-item">
+            <span class="why__num" aria-hidden="true">04</span>
+            <h3>Enterprise Expertise. Right-Sized Delivery.</h3>
+            <p>Access senior payment specialists without the overhead of large consulting firms. Whether you're launching a pilot or delivering a national-scale payment program, we tailor our engagement to match your goals, timeline, and budget.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -270,47 +263,42 @@
     <section class="section industries section-has-bg reveal" id="industries" aria-labelledby="industries-heading">
       <div class="section-bg section-bg--industries" aria-hidden="true"></div>
       <div class="section__inner">
-        <div class="industries__head">
-          <div>
-            <p class="eyebrow"><span class="section__num">05</span> Industries We Serve</p>
-            <h2 id="industries-heading">Powering the institutions behind modern payments.</h2>
-          </div>
-          <figure class="industries__figure">
-            <img src="industries.png" alt="Modern digital finance and industry landscape" width="640" height="360" loading="lazy" />
-          </figure>
+        <div class="section__header reveal-item">
+          <p class="eyebrow"><span class="section__num">05</span> Industries We Serve</p>
+          <h2 id="industries-heading">Powering the institutions behind modern payments.</h2>
         </div>
 
         <div class="bento">
-          <article class="bento__card">
+          <article class="bento__card reveal-item">
             <img src="images/industry-banks.jpg" alt="Banks and financial institutions" width="600" height="280" loading="lazy" />
             <div class="bento__overlay">
               <span class="bento__verb">Connect</span>
               <h3>Banks</h3>
-              <p>Payment corridor connectivity, scheme integration, certification, and real-time payment infrastructure.</p>
+              <p>Enable seamless cross-border payments with payment corridor connectivity, scheme integration, certification, and real-time payment infrastructure.</p>
             </div>
           </article>
-          <article class="bento__card">
+          <article class="bento__card reveal-item">
             <img src="images/about-fintech.jpg" alt="Fintech innovation and platforms" width="600" height="280" loading="lazy" />
             <div class="bento__overlay">
               <span class="bento__verb">Innovate</span>
               <h3>Fintechs</h3>
-              <p>Secure platforms, API integrations, and scalable solutions built for production.</p>
+              <p>Accelerate growth with secure payment platforms, API integrations, compliance support, and scalable fintech solutions built for production.</p>
             </div>
           </article>
-          <article class="bento__card">
+          <article class="bento__card reveal-item">
             <img src="images/industry-government.jpg" alt="Governments and public institutions" width="600" height="280" loading="lazy" />
             <div class="bento__overlay">
               <span class="bento__verb">Transform</span>
-              <h3>Governments</h3>
-              <p>National payment initiatives, digital infrastructure, and financial inclusion programs.</p>
+              <h3>Governments &amp; Public Institutions</h3>
+              <p>Support national payment initiatives, digital financial infrastructure, and financial inclusion programs through strategic advisory and end-to-end implementation.</p>
             </div>
           </article>
-          <article class="bento__card">
+          <article class="bento__card reveal-item">
             <img src="images/industry-enterprise.jpg" alt="Enterprises and growing businesses" width="600" height="280" loading="lazy" />
             <div class="bento__overlay">
               <span class="bento__verb">Grow</span>
               <h3>Enterprises &amp; MSMEs</h3>
-              <p>Secure payment acceptance, system integrations, and tailored solutions designed to scale.</p>
+              <p>Deliver secure payment acceptance, system integrations, and tailored payment solutions designed to grow with your business.</p>
             </div>
           </article>
         </div>
@@ -320,12 +308,12 @@
     <section class="section contact section-has-bg reveal" id="contact" aria-labelledby="contact-heading">
       <div class="section-bg section-bg--contact" aria-hidden="true"></div>
       <div class="section__inner">
-        <div class="contact__card glass">
+        <div class="contact__card glass reveal-item">
           <div class="contact__intro">
             <p class="eyebrow"><span class="section__num">06</span> Get in Touch</p>
-            <h2 id="contact-heading">Tell us where you want your payments to go.</h2>
+            <h2 id="contact-heading">Tell us where you want your payments to go. We'll help you get there.</h2>
             <p class="section__lead">
-              Every successful payments journey starts with the right conversation. Whether you're planning a new corridor, preparing for certification, or modernizing infrastructure — we're ready to help.
+              Every successful payments journey starts with the right conversation. Whether you're planning a new cross-border corridor, preparing for certification, modernizing your payment infrastructure, or exploring a new idea, our team is ready to help you define the path forward.
             </p>
             <a class="btn btn--gold contact__mailto" href="mailto:hello@bngs.example?subject=BNGS%20Inquiry">
               Email hello@bngs.example
@@ -363,7 +351,7 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <div>
-        <p class="site-footer__brand">BNGS</p>
+        <img class="site-footer__logo" src="images/bngs-logo.png" alt="BNGS" width="110" height="44" />
         <p class="site-footer__tag">Cross-Border Payments · Consulting · Technology</p>
       </div>
       <p class="site-footer__copy">&copy; <span id="year"></span> Badami NextGen Solutions. All rights reserved.</p>
