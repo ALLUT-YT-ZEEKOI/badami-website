@@ -185,4 +185,46 @@
     if (success) success.hidden = false;
     window.location.href = mailto;
   });
+  /* PayOne Interactive Currency Transfer Calculator */
+  const sendInput = document.getElementById("send-amount");
+  const receiveInput = document.getElementById("receive-amount");
+  const sendCurr = document.getElementById("send-curr");
+  const recCurr = document.getElementById("rec-curr");
+
+  const rates = {
+    USD: { INR: 83.45, AED: 3.67, EUR: 0.92 },
+    EUR: { INR: 90.80, AED: 4.00, USD: 1.09 },
+    GBP: { INR: 106.25, AED: 4.67, EUR: 1.17, USD: 1.27 }
+  };
+
+  const updateCalculator = () => {
+    if (!sendInput || !receiveInput || !sendCurr || !recCurr) return;
+    const rawVal = parseFloat(sendInput.value.replace(/,/g, "")) || 0;
+    const from = sendCurr.value;
+    const to = recCurr.value;
+
+    let rate = 1;
+    if (from === to) {
+      rate = 1;
+    } else if (rates[from] && rates[from][to]) {
+      rate = rates[from][to];
+    } else {
+      rate = 83.45;
+    }
+
+    const calculated = (rawVal * rate).toLocaleString("en-US", { maximumFractionDigits: 2 });
+    receiveInput.value = calculated;
+
+    const rateBadge = document.querySelector(".rate-badge span");
+    if (rateBadge) {
+      rateBadge.textContent = `1 ${from} = ${rate} ${to} · Guaranteed FX`;
+    }
+  };
+
+  if (sendInput) {
+    sendInput.addEventListener("input", updateCalculator);
+    sendCurr?.addEventListener("change", updateCalculator);
+    recCurr?.addEventListener("change", updateCalculator);
+    updateCalculator();
+  }
 })();

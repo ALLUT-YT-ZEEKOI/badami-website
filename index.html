@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Badami NextGen Solutions (BNGS) — cross-border payments, consulting, and technology infrastructure for banks, fintechs, and governments." />
+  <meta name="description"
+    content="Badami NextGen Solutions (BNGS) — cross-border payments, consulting, and technology infrastructure for banks, fintechs, and governments." />
   <title>BNGS — Badami NextGen Solutions</title>
   <link rel="icon" href="images/bngs-logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -33,25 +38,140 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-brand">
-      <div class="hero__banner" aria-hidden="true">
-        <img src="hero_bg.png" alt="" width="1920" height="1080" fetchpriority="high" />
+    <section class="hero payone-hero" aria-labelledby="hero-brand">
+      <div class="hero__bg-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="grid-pattern"></div>
       </div>
-      <div class="hero__veil" aria-hidden="true"></div>
-      <div class="hero__glow" aria-hidden="true"></div>
-      <div class="hero__grid">
-        <div class="hero__copy">
-          <p class="hero__tag hero-anim" style="--d: 0s">Cross-Border Payments · Consulting · Technology</p>
-          <h1 class="hero__headline hero-anim" id="hero-brand" style="--d: 0.1s">Building the infrastructure behind the world's connected payments.</h1>
-          <p class="hero__lead hero-anim" style="--d: 0.22s">
-            Money should move as effortlessly as information. BNGS develops the payment infrastructure that makes this possible: connecting countries, institutions, and technologies through real-time payment rails, UPI integrations, regulatory compliance, certification, and purpose-built applications.
+
+      <div class="hero__container">
+        <div class="hero__content hero-anim" style="--d: 0.1s">
+          <div class="hero__pill">
+            <span class="pill-dot"></span>
+            <span>NextGen Cross-Border Payments &amp; Fintech Rails</span>
+          </div>
+          <h1 class="hero__title" id="hero-brand">
+            Building the Infrastructure Behind <span class="gradient-text">Connected Global Payments</span>
+          </h1>
+          <p class="hero__desc">
+            Money should move as effortlessly as information. BNGS develops high-performance payment infrastructure:
+            connecting banks, institutions, and fintechs through real-time payment rails, UPI integrations, compliance,
+            and purpose-built platforms.
           </p>
-          <p class="hero__lead hero__lead--secondary hero-anim" style="--d: 0.32s">
-            We partner with banks, fintechs, and governments to create payment ecosystems that are trusted, scalable, and ready for the future.
-          </p>
-          <div class="hero__actions hero-anim" style="--d: 0.42s">
-            <a class="btn btn--gold" href="#contact">Start a Conversation</a>
-            <a class="btn btn--ghost" href="#services">Explore Our Services</a>
+
+          <div class="hero__btns">
+            <a class="btn btn--payone-primary" href="#contact">
+              <span>Start a Conversation</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a class="btn btn--payone-secondary" href="#services">
+              <span>Explore Our Services</span>
+            </a>
+          </div>
+
+          <div class="hero__trust-bar">
+            <div class="trust-item">
+              <span class="trust-num">10+ Yrs</span>
+              <span class="trust-txt">Fintech Experience</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-num">50+</span>
+              <span class="trust-txt">Global Corridors</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-num">99.99%</span>
+              <span class="trust-txt">System Uptime</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual hero-anim" style="--d: 0.25s">
+          <div class="payone-card-wrapper">
+            <!-- Floating Notification Badge 1 -->
+            <div class="floating-badge badge-top float-anim-1">
+              <div class="badge-icon success">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </div>
+              <div class="badge-text">
+                <strong>Transfer Success</strong>
+                <span>+$4,850.00 USD Settled</span>
+              </div>
+            </div>
+
+            <!-- Main Interactive Payment / Corridor Simulator Card -->
+            <div class="payment-widget-card">
+              <div class="widget-header">
+                <h3>Cross-Border Transfer Preview</h3>
+                <span class="live-tag">REAL-TIME RAIL</span>
+              </div>
+
+              <div class="widget-field">
+                <label>You Send</label>
+                <div class="input-group">
+                  <input type="text" value="5,000" id="send-amount" />
+                  <select id="send-curr">
+                    <option value="USD">USD ($)</option>
+                    <option value="EUR">EUR (€)</option>
+                    <option value="GBP">GBP (£)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="widget-rate-row">
+                <div class="rate-line"></div>
+                <div class="rate-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                  </svg>
+                  <span>1 USD = 83.45 INR · Guaranteed FX</span>
+                </div>
+              </div>
+
+              <div class="widget-field">
+                <label>Recipient Receives</label>
+                <div class="input-group">
+                  <input type="text" value="4,17,250" id="receive-amount" readonly />
+                  <select id="rec-curr">
+                    <option value="INR">INR (₹)</option>
+                    <option value="AED">AED (AED)</option>
+                    <option value="EUR">EUR (€)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="widget-meta">
+                <div class="meta-row">
+                  <span>Estimated Time:</span>
+                  <strong class="text-green">Instant (&lt; 2 Sec)</strong>
+                </div>
+                <div class="meta-row">
+                  <span>Rail Protocol:</span>
+                  <strong>UPI / ISO 20022</strong>
+                </div>
+              </div>
+
+              <a href="#contact" class="btn btn--widget-action">Connect Your Payment Corridor</a>
+            </div>
+
+            <!-- Floating Notification Badge 2 -->
+            <div class="floating-badge badge-bottom float-anim-2">
+              <div class="badge-icon shield">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div class="badge-text">
+                <strong>Bank-Grade Security</strong>
+                <span>ISO 27001 &amp; PCI-DSS Certified</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -65,19 +185,28 @@
           <div class="about__media reveal-item">
             <h2 id="about-heading">Your partner in navigating the complexity of cross-border payments.</h2>
             <figure class="about__figure">
-              <img src="who_we_are.png" alt="Professional collaborating on payment strategy across devices" width="640" height="400" loading="lazy" />
+              <img src="who_we_are.png" alt="Professional collaborating on payment strategy across devices" width="640"
+                height="400" loading="lazy" />
             </figure>
           </div>
           <div class="about__content reveal-item">
             <div class="about__copy">
               <p>
-                Badami NextGen Solutions (BNGS) helps banks, governments, fintechs, and financial institutions build, connect, and scale modern payment ecosystems. We specialize in the most complex part of payments where domestic systems meet international networks, regulations intersect, and interoperability becomes mission-critical.
+                Badami NextGen Solutions (BNGS) helps banks, governments, fintechs, and financial institutions build,
+                connect, and scale modern payment ecosystems. We specialize in the most complex part of payments where
+                domestic systems meet international networks, regulations intersect, and interoperability becomes
+                mission-critical.
               </p>
               <p>
-                With deep expertise across real-time payment systems, cross-border corridors, scheme integration, compliance, certification, and payment technology, our team brings hands-on experience gained from delivering payment infrastructure across multiple markets. We don't just provide strategic advice; we design, integrate, certify, and operationalize the systems that keep money moving.
+                With deep expertise across real-time payment systems, cross-border corridors, scheme integration,
+                compliance, certification, and payment technology, our team brings hands-on experience gained from
+                delivering payment infrastructure across multiple markets. We don't just provide strategic advice; we
+                design, integrate, certify, and operationalize the systems that keep money moving.
               </p>
               <p>
-                From enabling a bank to connect with a new payment corridor, supporting a fintech through certification, or partnering with governments on national payment initiatives, BNGS serves as a single, accountable partner from strategy and implementation to go-live and long-term support.
+                From enabling a bank to connect with a new payment corridor, supporting a fintech through certification,
+                or partnering with governments on national payment initiatives, BNGS serves as a single, accountable
+                partner from strategy and implementation to go-live and long-term support.
               </p>
             </div>
           </div>
@@ -94,21 +223,26 @@
             <h2 id="services-heading">Three areas of expertise. One goal: payments that perform.</h2>
           </div>
           <p class="section__aside">
-            Every engagement is built around a measurable outcome, not billable hours. Whether it's launching a cross-border payment corridor, achieving certification, or delivering a production-ready platform, we combine strategy, technology, and execution to help payment ecosystems move forward with confidence.
+            Every engagement is built around a measurable outcome, not billable hours. Whether it's launching a
+            cross-border payment corridor, achieving certification, or delivering a production-ready platform, we
+            combine strategy, technology, and execution to help payment ecosystems move forward with confidence.
           </p>
         </div>
 
         <div class="services__shell glass reveal-item">
           <div class="services__tabs" role="tablist" aria-label="Service areas">
-            <button class="services__tab is-active" type="button" role="tab" id="tab-0" aria-selected="true" aria-controls="panel-0" data-index="0">
+            <button class="services__tab is-active" type="button" role="tab" id="tab-0" aria-selected="true"
+              aria-controls="panel-0" data-index="0">
               <span class="services__tab-num">01</span>
               <span class="services__tab-label">Cross-Border Payments</span>
             </button>
-            <button class="services__tab" type="button" role="tab" id="tab-1" aria-selected="false" aria-controls="panel-1" data-index="1" tabindex="-1">
+            <button class="services__tab" type="button" role="tab" id="tab-1" aria-selected="false"
+              aria-controls="panel-1" data-index="1" tabindex="-1">
               <span class="services__tab-num">02</span>
               <span class="services__tab-label">Consulting &amp; Advisory</span>
             </button>
-            <button class="services__tab" type="button" role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2" data-index="2" tabindex="-1">
+            <button class="services__tab" type="button" role="tab" id="tab-2" aria-selected="false"
+              aria-controls="panel-2" data-index="2" tabindex="-1">
               <span class="services__tab-num">03</span>
               <span class="services__tab-label">Application Development</span>
             </button>
@@ -117,11 +251,13 @@
           <div class="services__panels">
             <article class="services__panel is-active" role="tabpanel" id="panel-0" aria-labelledby="tab-0">
               <figure class="services__visual">
-                <img src="images/service-crossborder.jpg" alt="Global currency and cross-border payment networks" width="800" height="420" loading="lazy" />
+                <img src="images/service-crossborder.jpg" alt="Global currency and cross-border payment networks"
+                  width="800" height="420" loading="lazy" />
               </figure>
               <div class="services__body">
                 <h3>Cross-Border Payment Solutions</h3>
-                <p>We enable seamless international payments by connecting financial institutions to modern payment networks and real-time payment rails.</p>
+                <p>We enable seamless international payments by connecting financial institutions to modern payment
+                  networks and real-time payment rails.</p>
                 <ul>
                   <li>Cross-border payment infrastructure</li>
                   <li>Global banking and scheme integrations</li>
@@ -134,11 +270,13 @@
 
             <article class="services__panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden>
               <figure class="services__visual">
-                <img src="images/service-consulting.jpg" alt="Payment consulting and advisory collaboration" width="800" height="420" loading="lazy" />
+                <img src="images/service-consulting.jpg" alt="Payment consulting and advisory collaboration" width="800"
+                  height="420" loading="lazy" />
               </figure>
               <div class="services__body">
                 <h3>Payment Consulting &amp; Advisory</h3>
-                <p>From strategy to certification, we help organizations navigate the technical, operational, and regulatory complexities of modern payments.</p>
+                <p>From strategy to certification, we help organizations navigate the technical, operational, and
+                  regulatory complexities of modern payments.</p>
                 <ul>
                   <li>Payment ecosystem and corridor strategy</li>
                   <li>Scheme onboarding and certification support</li>
@@ -151,11 +289,13 @@
 
             <article class="services__panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
               <figure class="services__visual">
-                <img src="hero_bg.png" alt="Application development and technology ecosystem" width="800" height="420" loading="lazy" />
+                <img src="hero_bg.png" alt="Application development and technology ecosystem" width="800" height="420"
+                  loading="lazy" />
               </figure>
               <div class="services__body">
                 <h3>Application Development</h3>
-                <p>We build secure, scalable payment applications designed for high-volume, mission-critical financial environments.</p>
+                <p>We build secure, scalable payment applications designed for high-volume, mission-critical financial
+                  environments.</p>
                 <ul>
                   <li>Custom fintech applications</li>
                   <li>API, switch, and payment gateway integrations</li>
@@ -177,10 +317,13 @@
           <p class="eyebrow"><span class="section__num">03</span> How We Deliver</p>
           <h2 id="approach-heading">End-to-end isn't a promise. It's how we work.</h2>
           <p class="section__lead">
-            Building a payment ecosystem requires more than technology — it demands seamless execution across integration, certification, compliance, and ongoing operations. BNGS provides end-to-end delivery, ensuring every stage is aligned, every dependency is managed, and every solution is ready for production.
+            Building a payment ecosystem requires more than technology — it demands seamless execution across
+            integration, certification, compliance, and ongoing operations. BNGS provides end-to-end delivery, ensuring
+            every stage is aligned, every dependency is managed, and every solution is ready for production.
           </p>
           <figure class="approach__figure">
-            <img src="how_we_deliver.png" alt="Team delivering payment systems and infrastructure" width="800" height="320" loading="lazy" />
+            <img src="how_we_deliver.png" alt="Team delivering payment systems and infrastructure" width="800"
+              height="320" loading="lazy" />
           </figure>
         </div>
 
@@ -190,7 +333,8 @@
             <div class="timeline__content">
               <span class="timeline__label">Integrate</span>
               <h3>Payment Integrations</h3>
-              <p>We connect banks, payment schemes, switches, fintech platforms, and third-party providers through secure, reliable, and standards-compliant integrations.</p>
+              <p>We connect banks, payment schemes, switches, fintech platforms, and third-party providers through
+                secure, reliable, and standards-compliant integrations.</p>
             </div>
           </li>
           <li class="timeline__item reveal-item">
@@ -198,7 +342,8 @@
             <div class="timeline__content">
               <span class="timeline__label">Certify</span>
               <h3>Testing &amp; Certification</h3>
-              <p>From structured testing to scheme certification, we help you meet technical and operational requirements with confidence, reducing risk before go-live.</p>
+              <p>From structured testing to scheme certification, we help you meet technical and operational
+                requirements with confidence, reducing risk before go-live.</p>
             </div>
           </li>
           <li class="timeline__item reveal-item">
@@ -206,7 +351,8 @@
             <div class="timeline__content">
               <span class="timeline__label">Resolve</span>
               <h3>Dispute Management</h3>
-              <p>We design dispute and chargeback workflows that are efficient, compliant, and built into your payment operations from day one.</p>
+              <p>We design dispute and chargeback workflows that are efficient, compliant, and built into your payment
+                operations from day one.</p>
             </div>
           </li>
           <li class="timeline__item reveal-item">
@@ -214,7 +360,8 @@
             <div class="timeline__content">
               <span class="timeline__label">Comply</span>
               <h3>Compliance Support</h3>
-              <p>Navigate evolving regulatory requirements with expert guidance across payment schemes, industry standards, and central bank frameworks.</p>
+              <p>Navigate evolving regulatory requirements with expert guidance across payment schemes, industry
+                standards, and central bank frameworks.</p>
             </div>
           </li>
           <li class="timeline__item reveal-item">
@@ -222,7 +369,8 @@
             <div class="timeline__content">
               <span class="timeline__label">Operate</span>
               <h3>Managed Services</h3>
-              <p>We provide ongoing monitoring, maintenance, optimization, and operational support to keep your payment ecosystem secure, resilient, and performing at scale.</p>
+              <p>We provide ongoing monitoring, maintenance, optimization, and operational support to keep your payment
+                ecosystem secure, resilient, and performing at scale.</p>
             </div>
           </li>
         </ol>
@@ -239,22 +387,30 @@
           <article class="why__card glass reveal-item">
             <span class="why__num" aria-hidden="true">01</span>
             <h3>Proven Cross-Border Expertise</h3>
-            <p>Our experience is built on delivering real payment infrastructure, from cross-border corridor launches and scheme integrations to certification and production deployment. We understand the challenges because we've solved them.</p>
+            <p>Our experience is built on delivering real payment infrastructure, from cross-border corridor launches
+              and scheme integrations to certification and production deployment. We understand the challenges because
+              we've solved them.</p>
           </article>
           <article class="why__card glass reveal-item">
             <span class="why__num" aria-hidden="true">02</span>
             <h3>A Strong Global Payments Network</h3>
-            <p>Our relationships across banks, payment schemes, regulators, and financial institutions help accelerate collaboration, streamline integrations, and reduce the time it takes to bring payment initiatives to market.</p>
+            <p>Our relationships across banks, payment schemes, regulators, and financial institutions help accelerate
+              collaboration, streamline integrations, and reduce the time it takes to bring payment initiatives to
+              market.</p>
           </article>
           <article class="why__card glass reveal-item">
             <span class="why__num" aria-hidden="true">03</span>
             <h3>One Partner. End to End.</h3>
-            <p>From strategy and solution design to implementation, certification, go-live, and ongoing operations, we provide a single team with end-to-end accountability, eliminating unnecessary complexity and vendor coordination.</p>
+            <p>From strategy and solution design to implementation, certification, go-live, and ongoing operations, we
+              provide a single team with end-to-end accountability, eliminating unnecessary complexity and vendor
+              coordination.</p>
           </article>
           <article class="why__card glass reveal-item">
             <span class="why__num" aria-hidden="true">04</span>
             <h3>Enterprise Expertise. Right-Sized Delivery.</h3>
-            <p>Access senior payment specialists without the overhead of large consulting firms. Whether you're launching a pilot or delivering a national-scale payment program, we tailor our engagement to match your goals, timeline, and budget.</p>
+            <p>Access senior payment specialists without the overhead of large consulting firms. Whether you're
+              launching a pilot or delivering a national-scale payment program, we tailor our engagement to match your
+              goals, timeline, and budget.</p>
           </article>
         </div>
       </div>
@@ -270,35 +426,43 @@
 
         <div class="bento">
           <article class="bento__card reveal-item">
-            <img src="images/industry-banks.jpg" alt="Banks and financial institutions" width="600" height="280" loading="lazy" />
+            <img src="images/industry-banks.jpg" alt="Banks and financial institutions" width="600" height="280"
+              loading="lazy" />
             <div class="bento__overlay">
               <span class="bento__verb">Connect</span>
               <h3>Banks</h3>
-              <p>Enable seamless cross-border payments with payment corridor connectivity, scheme integration, certification, and real-time payment infrastructure.</p>
+              <p>Enable seamless cross-border payments with payment corridor connectivity, scheme integration,
+                certification, and real-time payment infrastructure.</p>
             </div>
           </article>
           <article class="bento__card reveal-item">
-            <img src="images/about-fintech.jpg" alt="Fintech innovation and platforms" width="600" height="280" loading="lazy" />
+            <img src="images/about-fintech.jpg" alt="Fintech innovation and platforms" width="600" height="280"
+              loading="lazy" />
             <div class="bento__overlay">
               <span class="bento__verb">Innovate</span>
               <h3>Fintechs</h3>
-              <p>Accelerate growth with secure payment platforms, API integrations, compliance support, and scalable fintech solutions built for production.</p>
+              <p>Accelerate growth with secure payment platforms, API integrations, compliance support, and scalable
+                fintech solutions built for production.</p>
             </div>
           </article>
           <article class="bento__card reveal-item">
-            <img src="images/industry-government.jpg" alt="Governments and public institutions" width="600" height="280" loading="lazy" />
+            <img src="images/industry-government.jpg" alt="Governments and public institutions" width="600" height="280"
+              loading="lazy" />
             <div class="bento__overlay">
               <span class="bento__verb">Transform</span>
               <h3>Governments &amp; Public Institutions</h3>
-              <p>Support national payment initiatives, digital financial infrastructure, and financial inclusion programs through strategic advisory and end-to-end implementation.</p>
+              <p>Support national payment initiatives, digital financial infrastructure, and financial inclusion
+                programs through strategic advisory and end-to-end implementation.</p>
             </div>
           </article>
           <article class="bento__card reveal-item">
-            <img src="images/industry-enterprise.jpg" alt="Enterprises and growing businesses" width="600" height="280" loading="lazy" />
+            <img src="images/industry-enterprise.jpg" alt="Enterprises and growing businesses" width="600" height="280"
+              loading="lazy" />
             <div class="bento__overlay">
               <span class="bento__verb">Grow</span>
               <h3>Enterprises &amp; MSMEs</h3>
-              <p>Deliver secure payment acceptance, system integrations, and tailored payment solutions designed to grow with your business.</p>
+              <p>Deliver secure payment acceptance, system integrations, and tailored payment solutions designed to grow
+                with your business.</p>
             </div>
           </article>
         </div>
@@ -313,7 +477,9 @@
             <p class="eyebrow"><span class="section__num">06</span> Get in Touch</p>
             <h2 id="contact-heading">Tell us where you want your payments to go. We'll help you get there.</h2>
             <p class="section__lead">
-              Every successful payments journey starts with the right conversation. Whether you're planning a new cross-border corridor, preparing for certification, modernizing your payment infrastructure, or exploring a new idea, our team is ready to help you define the path forward.
+              Every successful payments journey starts with the right conversation. Whether you're planning a new
+              cross-border corridor, preparing for certification, modernizing your payment infrastructure, or exploring
+              a new idea, our team is ready to help you define the path forward.
             </p>
             <a class="btn btn--gold contact__mailto" href="mailto:hello@bngs.example?subject=BNGS%20Inquiry">
               Email hello@bngs.example
@@ -360,4 +526,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
