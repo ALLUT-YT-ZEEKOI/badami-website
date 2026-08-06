@@ -177,40 +177,84 @@
       </div>
     </section>
 
-    <section class="section about section-has-bg reveal" id="about" aria-labelledby="about-heading">
-      <div class="section-bg section-bg--about" aria-hidden="true"></div>
+    <section class="section about reveal" id="about" aria-labelledby="about-heading">
+      <div class="about__ambient" aria-hidden="true">
+        <div class="about__glow about__glow--1"></div>
+        <div class="about__glow about__glow--2"></div>
+      </div>
       <div class="section__inner">
-        <p class="eyebrow reveal-item"><span class="section__num">01</span> Who We Are</p>
-        <div class="about__layout">
-          <div class="about__media reveal-item">
-            <h2 id="about-heading">Your partner in navigating the complexity of cross-border payments.</h2>
-            <figure class="about__figure">
-              <img src="who_we_are.png" alt="Professional collaborating on payment strategy across devices" width="640"
-                height="400" loading="lazy" />
-            </figure>
-          </div>
-          <div class="about__content reveal-item">
-            <div class="about__copy">
-              <p>
-                Badami NextGen Solutions (BNGS) helps banks, governments, fintechs, and financial institutions build,
-                connect, and scale modern payment ecosystems. We specialize in the most complex part of payments where
-                domestic systems meet international networks, regulations intersect, and interoperability becomes
-                mission-critical.
-              </p>
-              <p>
-                With deep expertise across real-time payment systems, cross-border corridors, scheme integration,
-                compliance, certification, and payment technology, our team brings hands-on experience gained from
-                delivering payment infrastructure across multiple markets. We don't just provide strategic advice; we
-                design, integrate, certify, and operationalize the systems that keep money moving.
-              </p>
-              <p>
-                From enabling a bank to connect with a new payment corridor, supporting a fintech through certification,
-                or partnering with governments on national payment initiatives, BNGS serves as a single, accountable
-                partner from strategy and implementation to go-live and long-term support.
-              </p>
+        <header class="about__header reveal-item">
+          <p class="eyebrow"><span class="section__num">01</span> Who We Are</p>
+          <h2 id="about-heading">Your partner in navigating the complexity of <span class="gradient-text">cross-border payments.</span></h2>
+        </header>
+
+        <div class="about__stage reveal-item">
+          <article class="about__panel glass">
+            <p class="about__lead">
+              Badami NextGen Solutions (BNGS) helps banks, governments, fintechs, and financial institutions build,
+              connect, and scale modern payment ecosystems. We specialize in the most complex part of payments where
+              domestic systems meet international networks, regulations intersect, and interoperability becomes
+              mission-critical.
+            </p>
+            <p>
+              With deep expertise across real-time payment systems, cross-border corridors, scheme integration,
+              compliance, certification, and payment technology, our team brings hands-on experience gained from
+              delivering payment infrastructure across multiple markets. We don't just provide strategic advice; we
+              design, integrate, certify, and operationalize the systems that keep money moving.
+            </p>
+            <p>
+              From enabling a bank to connect with a new payment corridor, supporting a fintech through certification,
+              or partnering with governments on national payment initiatives, BNGS serves as a single, accountable
+              partner from strategy and implementation to go-live and long-term support.
+            </p>
+          </article>
+
+          <figure class="about__visual">
+            <img src="who_we_are.png" alt="Professional collaborating on payment strategy across devices" width="640"
+              height="400" loading="lazy" />
+            <div class="about__chip about__chip--top">
+              <span class="about__chip-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </span>
+              <span>50+ Global Corridors</span>
             </div>
-          </div>
+            <div class="about__chip about__chip--bottom">
+              <span class="about__chip-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </span>
+              <span>Bank-Grade Compliance</span>
+            </div>
+          </figure>
         </div>
+
+        <ul class="about__highlights reveal-item" aria-label="Core capabilities">
+          <li class="about__highlight">
+            <span class="about__highlight-num" aria-hidden="true">01</span>
+            <div>
+              <h3>Build &amp; Connect</h3>
+              <p>Modern payment ecosystems where domestic rails meet international networks.</p>
+            </div>
+          </li>
+          <li class="about__highlight">
+            <span class="about__highlight-num" aria-hidden="true">02</span>
+            <div>
+              <h3>Design &amp; Certify</h3>
+              <p>From scheme integration to go-live — we operationalize what others only advise on.</p>
+            </div>
+          </li>
+          <li class="about__highlight">
+            <span class="about__highlight-num" aria-hidden="true">03</span>
+            <div>
+              <h3>One Partner, End to End</h3>
+              <p>Strategy, implementation, certification, and long-term support under one roof.</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -384,29 +428,68 @@
           <h2 id="why-heading">Trusted for expertise. Chosen for outcomes.</h2>
         </div>
         <div class="why__grid">
-          <article class="why__card glass reveal-item">
-            <span class="why__num" aria-hidden="true">01</span>
+          <article class="why-card why-card--blue reveal-item">
+            <div class="why-card__glow" aria-hidden="true"></div>
+            <div class="why-card__top">
+              <div class="why-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </div>
+              <span class="why-card__num" aria-hidden="true">01</span>
+            </div>
             <h3>Proven Cross-Border Expertise</h3>
             <p>Our experience is built on delivering real payment infrastructure, from cross-border corridor launches
               and scheme integrations to certification and production deployment. We understand the challenges because
               we've solved them.</p>
           </article>
-          <article class="why__card glass reveal-item">
-            <span class="why__num" aria-hidden="true">02</span>
+
+          <article class="why-card why-card--cyan reveal-item">
+            <div class="why-card__glow" aria-hidden="true"></div>
+            <div class="why-card__top">
+              <div class="why-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <span class="why-card__num" aria-hidden="true">02</span>
+            </div>
             <h3>A Strong Global Payments Network</h3>
             <p>Our relationships across banks, payment schemes, regulators, and financial institutions help accelerate
               collaboration, streamline integrations, and reduce the time it takes to bring payment initiatives to
               market.</p>
           </article>
-          <article class="why__card glass reveal-item">
-            <span class="why__num" aria-hidden="true">03</span>
+
+          <article class="why-card why-card--indigo reveal-item">
+            <div class="why-card__glow" aria-hidden="true"></div>
+            <div class="why-card__top">
+              <div class="why-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <span class="why-card__num" aria-hidden="true">03</span>
+            </div>
             <h3>One Partner. End to End.</h3>
             <p>From strategy and solution design to implementation, certification, go-live, and ongoing operations, we
               provide a single team with end-to-end accountability, eliminating unnecessary complexity and vendor
               coordination.</p>
           </article>
-          <article class="why__card glass reveal-item">
-            <span class="why__num" aria-hidden="true">04</span>
+
+          <article class="why-card why-card--green reveal-item">
+            <div class="why-card__glow" aria-hidden="true"></div>
+            <div class="why-card__top">
+              <div class="why-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-3" />
+                  <path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01" />
+                </svg>
+              </div>
+              <span class="why-card__num" aria-hidden="true">04</span>
+            </div>
             <h3>Enterprise Expertise. Right-Sized Delivery.</h3>
             <p>Access senior payment specialists without the overhead of large consulting firms. Whether you're
               launching a pilot or delivering a national-scale payment program, we tailor our engagement to match your
@@ -416,53 +499,67 @@
       </div>
     </section>
 
-    <section class="section industries section-has-bg reveal" id="industries" aria-labelledby="industries-heading">
-      <div class="section-bg section-bg--industries" aria-hidden="true"></div>
+    <section class="section industries reveal" id="industries" aria-labelledby="industries-heading">
       <div class="section__inner">
         <div class="section__header reveal-item">
           <p class="eyebrow"><span class="section__num">05</span> Industries We Serve</p>
           <h2 id="industries-heading">Powering the institutions behind modern payments.</h2>
+          <p class="section__lead">
+            From national banks to fast-moving fintechs, we tailor payment infrastructure and advisory to the
+            regulatory, operational, and scale demands of each sector.
+          </p>
         </div>
 
-        <div class="bento">
-          <article class="bento__card reveal-item">
-            <img src="images/industry-banks.jpg" alt="Banks and financial institutions" width="600" height="280"
-              loading="lazy" />
-            <div class="bento__overlay">
-              <span class="bento__verb">Connect</span>
+        <div class="industries__list">
+          <article class="industry-row reveal-item">
+            <figure class="industry-row__figure">
+              <img src="images/industry-banks.jpg" alt="Banks and financial institutions" width="560" height="360"
+                loading="lazy" />
+            </figure>
+            <div class="industry-row__content">
+              <span class="industry-row__label">Connect</span>
               <h3>Banks</h3>
               <p>Enable seamless cross-border payments with payment corridor connectivity, scheme integration,
                 certification, and real-time payment infrastructure.</p>
             </div>
           </article>
-          <article class="bento__card reveal-item">
-            <img src="images/about-fintech.jpg" alt="Fintech innovation and platforms" width="600" height="280"
-              loading="lazy" />
-            <div class="bento__overlay">
-              <span class="bento__verb">Innovate</span>
+
+          <article class="industry-row industry-row--reverse reveal-item">
+            <figure class="industry-row__figure">
+              <img src="images/about-fintech.jpg" alt="Fintech innovation and platforms" width="560" height="360"
+                loading="lazy" />
+            </figure>
+            <div class="industry-row__content">
+              <span class="industry-row__label">Innovate</span>
               <h3>Fintechs</h3>
               <p>Accelerate growth with secure payment platforms, API integrations, compliance support, and scalable
                 fintech solutions built for production.</p>
             </div>
           </article>
-          <article class="bento__card reveal-item">
-            <img src="images/industry-government.jpg" alt="Governments and public institutions" width="600" height="280"
-              loading="lazy" />
-            <div class="bento__overlay">
-              <span class="bento__verb">Transform</span>
+
+          <article class="industry-row reveal-item">
+            <figure class="industry-row__figure">
+              <img src="images/industry-government.jpg" alt="Governments and public institutions" width="560"
+                height="360" loading="lazy" />
+            </figure>
+            <div class="industry-row__content">
+              <span class="industry-row__label">Transform</span>
               <h3>Governments &amp; Public Institutions</h3>
               <p>Support national payment initiatives, digital financial infrastructure, and financial inclusion
                 programs through strategic advisory and end-to-end implementation.</p>
             </div>
           </article>
-          <article class="bento__card reveal-item">
-            <img src="images/industry-enterprise.jpg" alt="Enterprises and growing businesses" width="600" height="280"
-              loading="lazy" />
-            <div class="bento__overlay">
-              <span class="bento__verb">Grow</span>
+
+          <article class="industry-row industry-row--reverse reveal-item">
+            <figure class="industry-row__figure">
+              <img src="images/industry-enterprise.jpg" alt="Enterprises and growing businesses" width="560"
+                height="360" loading="lazy" />
+            </figure>
+            <div class="industry-row__content">
+              <span class="industry-row__label">Grow</span>
               <h3>Enterprises &amp; MSMEs</h3>
-              <p>Deliver secure payment acceptance, system integrations, and tailored payment solutions designed to grow
-                with your business.</p>
+              <p>Deliver secure payment acceptance, system integrations, and tailored payment solutions designed to
+                grow with your business.</p>
             </div>
           </article>
         </div>
